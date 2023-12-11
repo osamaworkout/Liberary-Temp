@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* adjust font as you need  */
+    font-size: 18px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+.navbar li {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navbar input[type="search"] {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(230, 230, 230);
+    width: 60vh;
+    height: 35px;
+    margin-top: 25px;
+}
+
+.navbar input[type="search"]:hover {
+    background-color: #f3efef;
+    transition: background-color 0.3s ease;
+}
+
+#account {
+    display: flex;
+    align-items: center;
+}
+
+#account img {
+    width: 30px;
+    /* Adjust the width as needed */
+    height: 30px;
+    /* Adjust the height as needed */
+    border-radius: 50%;
+    /* Make it circular */
+}
+
+#account span {
+    margin-right: 10px;
+    /* Adjust the margin as needed */
+}
+
+.sidebar {
+    width: 60px;
+    height: 100%;
+    margin-left: 10px;
+    text-align: center;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0px;
+    /* padding: 20px; */
+    /* width: 40px; */
+}
+
+.sidebar li {
+    display: block;
+    margin-bottom: 9vh;
+    /* color: #fff; */
+    cursor: pointer;
+    font-size: 20px;
+    width: 35px;
+    padding: 12px;
+}
+
+.sidebar i {
+    font-size: 20px;
+    color: #8d8888;
+}
+
+/* Adding some styles for visual differentiation */
+.navbar li:hover,
+.sidebar li:hover {
+    background-color: rgb(255, 0, 76);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#notification {
+    position: relative;
+}
+
+.container {
+    display: flex;
+}
+
+.right-side {
+    background-color: #f3efef;
+    margin: 0px 10px 0px 10px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.section-one ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-one ul li {
+    padding-bottom: 20px;
+    width: 20%;
+    /* height: 30%; */
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.section-one i {
+    padding: 10px;
+    border-radius: 28px;
+    color: #ffff;
+    background-color: rgb(255, 0, 76);
+}
+
+.section-one ul li span:nth-child(2) {
+    float: right;
+    padding: 7px;
+}
+
+.section-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-two div {
+    width: 50%;
+}
+
+.section-one select,
+.user-list button,
+.book-list button,
+.book-issued button {
+    background-color: #ffffff;
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    border-style: none;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.section-one select:hover,
+.user-list button:hover,
+.book-list button:hover,
+.book-issued button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 0, 76);
+}
+
+table {
+    border-collapse: collapse;
+    width: 98%;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+table th {
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+table th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background-color: coral;
+}
+
+.section-three ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.section-three ul img {
+    width: 140px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.section-three ul span {
+    display: block;
+}
+
+.section-three ul span:nth-child(3) {
+    font-size: 12px;
+}
+
+.section-three ul li {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.section-three ul li:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    /* justify-content: space-between; */
+    /* float:right; */
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    color: #333;
+    cursor: pointer;
+}
+
+.pagination a:hover {
+    background-color: #f2f2f2;
+}
+
+.pagination .active {
+    background-color: rgb(255, 0, 76);
+    color: white;
+}
+
+/* Style for "Previous" and "Next" buttons */
+.pagination a:contains("Previous"),
+.pagination a:contains("Next") {
+    font-size: 18px;
+}
+
+.pagination a:contains("Previous"):hover,
+.pagination a:contains("Next"):hover {
+    background-color: #ddd;
+}

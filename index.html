@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Styles/index.css">
+    <script src="scripts/index.js" defer></script>
+    <title>Your Website</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="left-nav">
+            <li class="logo">Logo</li>
+            <li id="menu-toggle"><i class="fas fa-bars"></i></li>
+            <li>Dashbord</li>
+        </ul>
+
+        <input type="search" placeholder="Search...">
+
+        <ul class="right-nav">
+            <li id="notification"><i class="fas fa-bell"></i></li>
+            <li id="account">
+                <span>Username</span>
+                <img src="images/user.jpeg" alt="User Image"> <!-- Replace with the actual image source -->
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="leftside">
+
+            <div class="sidebar" id="sidebar">
+                <ul>
+                    <li><i class="fas fa-columns"></i></li>
+                    <li><i class="fas fa-redo"></i></li>
+                    <li><i class="fas fa-book-open"></i></li>
+                    <li><i class="fas fa-users"></i></li>
+                    <li><i class="fas fa-cog"></i></li>
+                    <li><i class="fas fa-question-circle"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-side">
+
+            <div class="section-one">
+                <p>Hello, Admin!</p>
+                <span>Date||Time</span>
+                <select name="cars" id="cars" aria-placeholder="choose Date..">
+                    <option value="volvo">this week</option>
+                    <option value="saab">last week</option>
+                    <option value="opel">this month</option>
+                    <option value="audi">last month</option>
+                    <option value="audi">this year</option>
+                    <option value="audi">last year</option>
+                </select>
+                <ul>
+                    <li>
+                        <span>1223</span>
+                        <span><i class="fas fa-users"></i></span>
+                        <p>total visitor</p>
+                    </li>
+                    <li>
+                        <span>1223</span>
+                        <span><i class="fas fa-book"></i></span>
+                        <p>Borrowed Books</p>
+                    </li>
+                    <li>
+                        <span>22</span>
+                        <span><i class="fas fa-hourglass"></i></span>
+                        <p>Overdue Books</p>
+                    </li>
+                    <li>
+                        <span>60</span>
+                        <span><i class="fas fa-user-plus"></i></span>
+                        <p>New Members</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="section-two">
+                <div class="user-list">
+                    <Span>Users List:</Span>
+                    <button>Add New User</button>
+                    <table>
+                        <tr>
+                            <th>User Id</th>
+                            <th>User Name</th>
+                            <th>Book Issued</th>
+                            <th>Department</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>0112</td>
+                            <td>User1</td>
+                            <td>05</td>
+                            <td>Busniness</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0110</td>
+                            <td>User2</td>
+                            <td>15</td>
+                            <td>Busniness</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0111</td>
+                            <td>User3</td>
+                            <td>23</td>
+                            <td>Acounting</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0113</td>
+                            <td>User4</td>
+                            <td>07</td>
+                            <td>Pharmacy</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="book-list">
+                    <Span>Books List:</Span>
+                    <button>Add New Book</button>
+                    <table>
+                        <tr>
+                            <th>Book Id</th>
+                            <th>Title</th>
+                            <th>Auther</th>
+                            <th>Avaliable</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>0112</td>
+                            <td>Book1</td>
+                            <td>Auther1</td>
+                            <td>25</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0110</td>
+                            <td>Book2</td>
+                            <td>Auther2</td>
+                            <td>16</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0111</td>
+                            <td>Book3</td>
+                            <td>Auther3</td>
+                            <td>08</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0113</td>
+                            <td>Book4</td>
+                            <td>Auther4</td>
+                            <td>07</td>
+                            <td><i class="fa-solid fa-ellipsis"></i></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="section-three">
+                <p>Top Choices:</p>
+                <ul class="top-choices">
+                    <li>
+                        <img src="images/1.webp" alt="Book1">
+                        <span>Book Name</span>
+                        <span>Auther</span>
+                    </li>
+                    <li>
+                        <img src="images/2.jpeg" alt="Book2">
+                        <span>Book Name</span>
+                        <span>Auther</span>
+                    </li>
+                    <li>
+                        <img src="images/3.jpg" alt="Book3">
+                        <span>Book Name</span>
+                        <span>Auther</span>
+                    </li>
+                    <li>
+                        <img src="images/4.jpg" alt="Book4">
+                        <span>Book Name</span>
+                        <span>Auther</span>
+                    </li>
+                    <li>
+                        <img src="images/5.jpeg" alt="Book5">
+                        <span>Book Name</span>
+                        <span>Auther</span>
+                    </li>
+                    <li>
+                        <img src="images/6.jpg" alt="Book6">
+                        <span>Book Name</span>
+                        <span>Auther</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="section-four">
+                <table id="myTable"> <!-- Add an id to the table -->
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>User Name</th>
+                            <th>Book ID</th>
+                            <th>Title</th>
+                            <th>Auther</th>
+                            <th>Overdue</th>
+                            <th>Status</th>
+                            <th>Fine</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-container">
+                    </tbody>
+                </table>
+                <div id="pagination-container">
+                </div>
+            </div>
+            <div class="section-five">
+                <div class="book-issued">
+                    <Span>Book Issued:</Span>
+                    <button>Issue book</button>
+                    <table>
+                        <tr>
+                            <th>User Id</th>
+                            <th>Book</th>
+                            <th>Issue Date</th>
+                            <th>Return Date</th>
+                            <th>Details</th>
+                        </tr>
+                        <tr>
+                            <td>0112</td>
+                            <td>book1</td>
+                            <td>20 Des,2022</td>
+                            <td>20 Des,2022</td>
+                            <td><a href="#">View Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>0112</td>
+                            <td>book1</td>
+                            <td>20 Des,2022</td>
+                            <td>20 Des,2022</td>
+                            <td><a href="#">View Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>0112</td>
+                            <td>book1</td>
+                            <td>20 Des,2022</td>
+                            <td>20 Des,2022</td>
+                            <td><a href="#">View Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>0112</td>
+                            <td>book1</td>
+                            <td>20 Des,2022</td>
+                            <td>20 Des,2022</td>
+                            <td><a href="#">View Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>0112</td>
+                            <td>book1</td>
+                            <td>20 Des,2022</td>
+                            <td>20 Des,2022</td>
+                            <td><a href="#">View Details</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="chart">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
